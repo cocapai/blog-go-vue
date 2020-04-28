@@ -146,6 +146,22 @@ definitions:
       sysUserId:
         type: integer
     type: object
+  model.ExaArticle:
+    properties:
+      articleName:
+        type: string
+      content:
+        type: string
+      articlePhoneData:
+        type: string
+      sysUser:
+        $ref: '#/definitions/model.SysUser'
+        type: object
+      sysUserAuthorityID:
+        type: string
+      sysUserId:
+        type: integer
+    type: object
   model.ExaFileUploadAndDownload:
     properties:
       key:
@@ -942,6 +958,123 @@ paths:
       tags:
       - SysApi
   /customer/customerList:
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: 获取权限客户列表
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/request.PageInfo'
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: '{"success":true,"data":{},"msg":"获取成功"}'
+          schema:
+            type: string
+      security:
+      - ApiKeyAuth: []
+      summary: 获取权限客户列表
+      tags:
+      - SysApi
+  /article/article:
+    delete:
+      consumes:
+      - application/json
+      parameters:
+      - description: 删除客户
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/model.ExaArticle'
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: '{"success":true,"data":{},"msg":"获取成功"}'
+          schema:
+            type: string
+      security:
+      - ApiKeyAuth: []
+      summary: 删除客户
+      tags:
+      - SysApi
+    get:
+      consumes:
+      - application/json
+      parameters:
+      - description: 获取单一客户信息
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/model.ExaArticle'
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: '{"success":true,"data":{},"msg":"获取成功"}'
+          schema:
+            type: string
+      security:
+      - ApiKeyAuth: []
+      summary: 获取单一客户信息
+      tags:
+      - SysApi
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 创建客户
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/model.ExaArticle'
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: '{"success":true,"data":{},"msg":"获取成功"}'
+          schema:
+            type: string
+      security:
+      - ApiKeyAuth: []
+      summary: 创建客户
+      tags:
+      - SysApi
+    put:
+      consumes:
+      - application/json
+      parameters:
+      - description: 创建客户
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/model.ExaArticle'
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: '{"success":true,"data":{},"msg":"获取成功"}'
+          schema:
+            type: string
+      security:
+      - ApiKeyAuth: []
+      summary: 更新客户信息
+      tags:
+      - SysApi
+  /article/articleList:
     get:
       consumes:
       - application/json
