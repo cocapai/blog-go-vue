@@ -1,19 +1,8 @@
-﻿
-<div align=center>
-<img src="http://qmplusimg.henrongyi.top/gvalogo.jpg" width=300" height="300" />
-</div>
-<div align=center>
-<img src="https://img.shields.io/badge/golang-1.12-blue"/>
-<img src="https://img.shields.io/badge/gin-1.4.0-lightBlue"/>
-<img src="https://img.shields.io/badge/vue-2.6.10-brightgreen"/>
-<img src="https://img.shields.io/badge/element--ui-2.12.0-green"/>
-<img src="https://img.shields.io/badge/gorm-1.9.10-red"/>
-</div>
+
 
 English | [简体中文](./README-zh_CN.md)
 
 # Project Guidelines
-[Online Documentation](http://doc.henrongyi.top/)
 
 - Web UI Framework：[element-ui](https://github.com/ElemeFE/element)  
 - Server Framework：[gin](https://github.com/gin-gonic/gin) 
@@ -227,12 +216,6 @@ backend code file: model\dnModel\api.go
 
 ## 8. Contacts
 ### 8.1 Groups
-| QQ group |  
-|  :---:  |
-| <img src="http://qmplusimg.henrongyi.top/qq.jpg" width="180"/> |
-### QQ group: 622360840
-
-### Wechat group: add anyone above, comment "加入gin-vue-admin交流群"
 
 ### 8.2 Team members
 | Jiang | Yin | Yan | Du | Yin | Song |
