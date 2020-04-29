@@ -24,7 +24,13 @@ const baseRouters = [{
         name: "404",
         component: () =>
             import ('@/view/error/index.vue')
-    }
+    },
+    {
+        path: '/index',
+        name: 'index',
+        component: () =>
+            import ('@/view/index/index.vue')
+    },
 ]
 
 // 需要通过后台数据来生成的组件
